@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-mjml",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "description": "Parcel plugin to handle mjml-templates as html",
   "main": "dist/index.js",
   "repository": {
