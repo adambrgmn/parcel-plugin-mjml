@@ -2,7 +2,7 @@
   "name": "parcel-plugin-mjml",
   "version": "0.0.0-development",
   "description": "Parcel plugin to handle mjml-templates as html",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "repository": {
     "url": "https://github.com/adambrgmn/parcel-plugin-mjml"
   },
@@ -13,6 +13,9 @@
     "test": "jest",
     "semantic-release": "semantic-release"
   },
+  "files": [
+    "build"
+  ],
   "dependencies": {
     "mjml": "^4.5.1"
   },
