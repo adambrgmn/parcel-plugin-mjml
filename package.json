@@ -9,7 +9,7 @@
   "author": "Adam Bergman<adam@fransvilhelm.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc && cp -R src/Asset build/",
+    "build": "babel src -d build --ignore 'src/**/__tests__/**'",
     "test": "jest",
     "semantic-release": "semantic-release"
   },
@@ -17,13 +17,10 @@
     "mjml": "^4.5.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-typescript": "^7.6.0",
-    "@types/jest": "^24.0.18",
-    "@types/mjml": "^4.0.2",
-    "@types/node": "^12.7.11",
-    "@types/parcel-bundler": "^1.12.1",
     "@typescript-eslint/eslint-plugin": "2.x",
     "@typescript-eslint/parser": "2.x",
     "babel-eslint": "10.x",

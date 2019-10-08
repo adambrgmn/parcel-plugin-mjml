@@ -1,11 +1,14 @@
-import { Asset } from './Asset';
-import mjml = require('mjml');
-import path = require('path');
+import { Asset } from 'parcel-bundler';
+import mjml from 'mjml';
+import path from 'path';
 
 class MJMLAsset extends Asset {
-  type = 'html';
+  constructor(name, ...args) {
+    super(name, ...args);
+    this.type = 'html';
+  }
 
-  parse(code: string) {
+  parse(code) {
     const { html } = mjml(code, { filePath: this.name });
     return html;
   }
@@ -27,4 +30,4 @@ class MJMLAsset extends Asset {
   }
 }
 
-export = MJMLAsset;
+module.exports = MJMLAsset;
